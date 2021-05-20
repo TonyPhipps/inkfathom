@@ -377,7 +377,7 @@ const buildPdf = (
   let doc = new jsPDF("p", "mm", [pageHeight, pageWidth]);
   const marginLeft =
     (pageWidth - cardWidth * columns - gutter * (columns - 1)) / 2;
-  const marginTop = (pageHeight - cardHeight * rows - gutter * (rows - 1)) / 2;
+  const marginTop = 10//(pageHeight - cardHeight * rows - gutter * (rows - 1)) / 2;
   cardPositions.forEach((position, i) => {
     const x = marginLeft + position.x;
     const y = marginTop + position.y;
