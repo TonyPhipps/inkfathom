@@ -323,14 +323,14 @@ const { jsPDF } = window.jspdf;
 const range = (n) => [...Array(n).keys()];
 
 function getColumns(width, cardWidth) {
-  const minimalMargin = 10;
+  const minimalMargin = 1;
   const pageWidth = width - minimalMargin * 2;
   const columns = Math.floor(pageWidth / cardWidth);
   return columns;
 }
 
 function getRows(height, cardHeight) {
-  const minimalMargin = 10;
+  const minimalMargin = 1;
   const pageHeight = height - minimalMargin * 2;
   const rows = Math.floor(pageHeight / cardHeight);
   return rows;
